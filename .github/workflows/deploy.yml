@@ -44,3 +44,5 @@ jobs:
         -var="acr_name=${{ env.AZURE_REGISTRY }}" \
         -var="image_name=${{ env.IMAGE_NAME }}"
       working-directory: ./terraform
+
+      
