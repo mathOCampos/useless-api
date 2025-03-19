@@ -2,26 +2,35 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /source
 
+# Create NuGet.config
+RUN echo '<?xml version="1.0" encoding="utf-8"?>\n\
+<configuration>\n\
+  <packageSources>\n\
+    <clear />\n\
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" />\n\
+  </packageSources>\n\
+</configuration>' > NuGet.config
+
 # Copy csproj and restore dependencies
 COPY UsersAPI/*.csproj ./UsersAPI/
-RUN dotnet restore UsersAPI/*.csproj
 
-# Copy all files and build
-COPY UsersAPI/. ./UsersAPI/
-RUN dotnet publish UsersAPI/*.csproj -c Release -o /app --no-restore
+# Restore packages
+WORKDIR /source/UsersAPI
+RUN dotnet restore
+
+# Copy everything else and build
+COPY UsersAPI/. .
+RUN dotnet publish -c Release -o /app
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+COPY --from=build /app ./
 
 # Create non-root user
 RUN adduser --system --group appuser
-
-# Copy built application
-COPY --from=build /app ./
 USER appuser
 
-# Configure for production
 ENV ASPNETCORE_URLS=http://+:80
 ENV ASPNETCORE_ENVIRONMENT=Production
 

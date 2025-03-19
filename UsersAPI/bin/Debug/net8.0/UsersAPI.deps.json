@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "UsersAPI/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "7.0.20",
+          "Microsoft.AspNetCore.OpenApi": "8.0.2",
           "Newtonsoft.Json": "13.0.3",
           "Swashbuckle.AspNetCore": "6.5.0",
           "System.Net.Http": "4.3.4"
@@ -17,14 +17,14 @@
           "UsersAPI.dll": {}
         }
       },
-      "Microsoft.AspNetCore.OpenApi/7.0.20": {
+      "Microsoft.AspNetCore.OpenApi/8.0.2": {
         "dependencies": {
           "Microsoft.OpenApi": "1.4.3"
         },
         "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "7.0.20.0",
-            "fileVersion": "7.0.2024.26907"
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "8.0.2.0",
+            "fileVersion": "8.0.224.6804"
           }
         }
       },
@@ -483,12 +483,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.OpenApi/7.0.20": {
+    "Microsoft.AspNetCore.OpenApi/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-coCi7bh16o4B2qKbD7fng+4m1vu51L9MzTW+9NZp3NvLgAurDMT1kOg2uuycCN4BtEz3EYXlfJMJ2hK6EU7ISQ==",
-      "path": "microsoft.aspnetcore.openapi/7.0.20",
-      "hashPath": "microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512"
+      "sha512": "sha512-59xQBsH+2at3+rrLazCNbaLhS1gmMY2fT1rSxa116EQ2oCbdULerytaYtr0h5iew+BVwJZNsWgvU3fOpt74DCA==",
+      "path": "microsoft.aspnetcore.openapi/8.0.2",
+      "hashPath": "microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

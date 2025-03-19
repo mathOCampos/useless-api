@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lXzxV5vAW0M=",
+  "dgSpecHash": "i5TbAGwmeJA=",
   "success": true,
   "projectFilePath": "/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/UsersAPI/UsersAPI.csproj",
   "expectedPackageFiles": [
-    "/home/matheusocampos/.nuget/packages/microsoft.aspnetcore.openapi/8.0.0/microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
+    "/home/matheusocampos/.nuget/packages/microsoft.aspnetcore.openapi/8.0.2/microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",
     "/home/matheusocampos/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/matheusocampos/.nuget/packages/microsoft.netcore.platforms/1.1.1/microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "/home/matheusocampos/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",

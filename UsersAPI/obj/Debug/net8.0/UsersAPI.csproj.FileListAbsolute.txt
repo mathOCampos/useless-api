@@ -32,3 +32,4 @@
 /mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/usersapi/obj/Debug/net8.0/UsersAPI.genruntimeconfig.cache
 /mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/usersapi/obj/Debug/net8.0/ref/UsersAPI.dll
 /mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/UsersAPI/bin/Debug/net8.0/Newtonsoft.Json.dll
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/UsersAPI/obj/Debug/net8.0/UsersAPI.sourcelink.json

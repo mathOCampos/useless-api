@@ -1,0 +1,12 @@
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/UsersAPI
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/appsettings.Development.json
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/appsettings.json
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/UsersAPI.dll
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/UsersAPI.deps.json
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/UsersAPI.runtimeconfig.json
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/UsersAPI.pdb
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/Microsoft.OpenApi.dll
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/Newtonsoft.Json.dll
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/Swashbuckle.AspNetCore.Swagger.dll
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/Swashbuckle.AspNetCore.SwaggerGen.dll
+/mnt/c/Users/T-Gamer/source/repos/UsersAPI-Azure/app/Swashbuckle.AspNetCore.SwaggerUI.dll
