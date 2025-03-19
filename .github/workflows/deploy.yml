@@ -34,12 +34,12 @@ jobs:
         docker push ${{ env.AZURE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
     
     - name: Terraform Init
-      run: terraform init -input=false -force-copy
+      run: terraform init -input=false -force-copy -lock=false
       working-directory: ./terraform
     
     - name: Terraform Apply
       run: |
-        terraform apply -auto-approve \
+        terraform apply -auto-approve -lock=false \
         -var="image_tag=${{ github.sha }}" \
         -var="acr_name=${{ env.AZURE_REGISTRY }}" \
         -var="image_name=${{ env.IMAGE_NAME }}"
