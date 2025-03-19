@@ -14,10 +14,6 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  features {}
-}
-
 variable "image_tag" {}
 variable "acr_name" {}
 variable "image_name" {}
