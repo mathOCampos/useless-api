@@ -2,33 +2,41 @@ name: Deploy to Azure
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  AZURE_REGISTRY: uselessapiregistry.azurecr.io
+  IMAGE_NAME: usersapi
+  RESOURCE_GROUP: rg-useless-api
+  APP_NAME: useless-api-linux
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v3
-
+    
     - name: Set up Azure CLI
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-
+    
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
-
+    
     - name: Build and push Docker image
       run: |
         az acr login --name ${{ env.AZURE_REGISTRY }}
         docker build -t ${{ env.AZURE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} .
         docker push ${{ env.AZURE_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
-
+    
     - name: Terraform Init
       run: terraform init -input=false -force-copy
       working-directory: ./terraform
-
+    
     - name: Terraform Apply
       run: |
         terraform apply -auto-approve \
