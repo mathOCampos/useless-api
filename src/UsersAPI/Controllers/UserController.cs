@@ -23,7 +23,7 @@ namespace WeatherAPI.Controllers
         public async Task<IActionResult> GetUsers()
         {
             // The URL to the Random User Generator API
-            var apiUrl = "https://randomuser.me/api/?results=10";  // You can adjust the 'results' query parameter
+            var apiUrl = "https://randomuser.me/api/?results=20";  // You can adjust the 'results' query parameter
 
             try
             {
